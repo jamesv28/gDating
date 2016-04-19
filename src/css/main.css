@@ -1,0 +1,15 @@
+/** fonts Montserrat for headers, old standar for everything else**/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body {
+    font-family: 'Old Standard TT', serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+strong {
+    font-weight: 700;
+}
