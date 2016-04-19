@@ -13,3 +13,32 @@ h1,h2,h3,h4 {
 strong {
     font-weight: 700;
 }
+
+/******* styling ************/
+#indexHead {
+    background: url("../img/dating.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    height: 400px;
+
+}
+
+#indexHead h2 {
+    color: #000000;
+    margin-top: 25%;
+
+}
+
+.logging {
+    margin-top: 100px;
+}
+
+.line {
+    height: 4px;
+    width: 40px;
+    background: #000;
+    margin: auto;
+    margin-bottom: 20px;
+}

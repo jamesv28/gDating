@@ -9,13 +9,28 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body ng-controller="myController">
-    <!-- sample angular code -->
+  <nav class="navbar navbar-light bg-faded">
+    <a class="navbar-brand" href="#/">gDating</a>
+
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#/register">Register</a>
+      </li>
+    </ul>
+
+  </nav>
+  <div ng-view>
+    <!-- stuff goes here -->
+  </div>
 
     
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>\
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
-
     <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="js/services/membersSerivces.js"></script>
   </body>
 </html>
