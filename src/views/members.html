@@ -1,7 +1,15 @@
 <div class="row"  id="memberBackground">
     <div class="container-fluid" >
-        <div class="col-md-4" id="memberLeft">
-
+        <div class="col-md-5" id="memberLeft" >
+            <div class="indMember col-md-12" ng-repeat="member in members">
+                <div class="col-md-4">
+                    <img ng-src="{{member.avatar}}">
+                </div>
+                <div class="col-md-8">
+                    <h6 >{{member.username}} </h6>
+                    <p>City:  {{member.address.city}}</p>
+                </div>
+            </div>
         </div>
 
     </div>

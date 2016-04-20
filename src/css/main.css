@@ -48,13 +48,22 @@ strong {
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+    background-position: top left;
+    background-attachment: fixed;
+    width: 100%;
 }
 
 #memberLeft {
     background: #ffffff;
-    opacity: .6;
-    height: 100vh;
-    overflow: scroll;
+    opacity: .85;
+    overflow-y: scroll;
+
+}
+
+.indMember {
+    opacity: 1;
+    padding-bottom: 10px;
+}
+.indMember:nth-child(first) {
+    padding-top: 50px;
 }
