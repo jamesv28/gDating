@@ -1,13 +1,13 @@
-/** fonts Montserrat for headers, old standar for everything else**/
+/** fonts bakersville for headers, montserrat for everything else**/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 html, body {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 h1,h2,h3,h4 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 
 strong {
@@ -41,4 +41,20 @@ strong {
     background: #000;
     margin: auto;
     margin-bottom: 20px;
+}
+
+#memberBackground {
+    background: url("../img/tree.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+#memberLeft {
+    background: #ffffff;
+    opacity: .6;
+    height: 100vh;
+    overflow: scroll;
 }
