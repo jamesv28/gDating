@@ -15,6 +15,8 @@ app.service('manipulateMembersService', ['getMembersService', '$http', function(
 
 app.service('getMembersService',['$http', function($http){
     return {
+
+
         getallMembers: function () {
             return $http({
                 method: 'GET',

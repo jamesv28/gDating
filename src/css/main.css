@@ -635,6 +635,7 @@ strong {
 #searchMatters {
     margin-top: 100px;
     background: #cccccc;
+    padding-bottom: 40px;
 }
 
 #searchMatters > .form-group {
