@@ -13,7 +13,7 @@ app.config(function ($routeProvider, $locationProvider) {
             controller: 'LoginCtrl'
         })
         .when('/members', {
-            templateUrl: 'members.html',
+            templateUrl: 'views/members.html',
             controller: 'membersCtrl'
         })
         .otherwise({
