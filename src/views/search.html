@@ -4,21 +4,71 @@
             <p>
                 <!-- TODO include pagination here along with filters -->
             </p>
-            <div class="indMember col-md-12" ng-repeat="member in members">
+            <DIV class="indMember col-md-12" > <!--   ng-repeat="member in members"   -->
                 <div class="col-md-4">
-                    <img ng-src="{{member.avatar}}">
-                </div>
-                <div class="col-md-8">
-                    <h6 >{{member.username}} </h6>
-                    <p>City:  {{member.address.city}}</p>
-                </div>
-                <div class="col-md-6 col-md-offset-1" id="searchMatters">
+                    <div class="col-md-4">
+                        <!--<img ng-src="{{member.avatar}}">-->
+                    </div>
+                    <div class="col-md-8">
 
+                    </div>
+                </div>
+            </div>
+        </div><!-- END OF LEFT -->
+
+                    <!--<h6 >{{member.username}} </h6>-->
+                    <!--<p>City:  {{member.address.city}}</p>-->
+                <div class="col-md-6 col-md-offset-1" id="searchMatters">
                     <h2 class="text-lg-center text-md-center">Search</h2>
                     <div class="line"></div>
+                    <form >
+                        <div class="form-group" id="searchTop" style="margin-bottom: 1rem;;">
+                            <label class="form-control-label col-md-2">Username: </label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="username" class="form-control" ng-model="username">
+                            </div>
+                            <label class="form-control-label col-md-2">Email</label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="email" ng-model="email" class="form-control">
+                            </div>
+                        </div><br><br>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label class="col-md-2 form-control-label">Gender</label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option>--Choose Gender--</option>
+                                    <option value="m">Male</option>
+                                    <option value="f">Female</option>
+                                </select>
+                            </div>
+                            <label class="col-md-2 form-control-label">Age: </label>
+                            <div class="col-md-4">
+                                <select class="form-control">
+                                    <option value="low">Low</option>
+                                    <option value="high">High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p>Search Type: </p>
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                Any of the search inputs i entered
+                            </label>&nbsp; &nbsp;
+                            <label class="radio-inline">
+                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                Every one of the fields I entered
+                            </label>
+
+                        </div>
+                        <div class="form-group col-md-offset-1">
+                            <button class="btn-warning-outline ">Search</button>
+                        </div>
+
+                    </form>
+
                 </div>
             </div>
         </div>
-
-    </div>
-</div>
