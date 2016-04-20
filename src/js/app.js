@@ -5,6 +5,6 @@ var app = angular.module('myApp',
         //'ngAnimate'
     ]);
 
-app.controller('myController', ['$scope', function($scope) {
+app.controller('MainCtrl', ['$scope', function($scope) {
   $scope.greeting = "Hello World!";
 }]);

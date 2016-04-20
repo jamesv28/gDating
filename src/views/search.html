@@ -1,9 +1,9 @@
-<div class="row"  id="memberBackground">
-    <div class="container-fluid" >
+<div class="row" id="searchPage">
+    <div class="container-fluid" ng-controller="searchCtrl">
         <div class="col-md-4" id="memberLeft" >
-           <p>
-               <!-- TODO include pagination here along with filters -->
-           </p>
+            <p>
+                <!-- TODO include pagination here along with filters -->
+            </p>
             <div class="indMember col-md-12" ng-repeat="member in members">
                 <div class="col-md-4">
                     <img ng-src="{{member.avatar}}">
@@ -11,6 +11,11 @@
                 <div class="col-md-8">
                     <h6 >{{member.username}} </h6>
                     <p>City:  {{member.address.city}}</p>
+                </div>
+                <div class="col-md-6 col-md-offset-1" id="searchMatters">
+
+                    <h2 class="text-lg-center text-md-center">Search</h2>
+                    <div class="line"></div>
                 </div>
             </div>
         </div>
