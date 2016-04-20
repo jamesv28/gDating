@@ -10,6 +10,7 @@ app.service('getMembersService',['$http', function($http){
                     return results;
                 });
         }
+        //TODO: create a function that takes members DOB and finds age
 
         }; // end of return statement
 
