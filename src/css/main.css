@@ -44,6 +44,7 @@ strong {
 }
 
 #memberBackground {
+    /*background: url("../img/collection.jpg");*/
     background: url("../img/tree.jpg");
     -webkit-background-size: cover;
     background-size: cover;
@@ -64,6 +65,14 @@ strong {
     opacity: 1;
     padding-bottom: 10px;
 }
-.indMember:nth-child(first) {
-    padding-top: 50px;
+
+.btn-warning-outline {
+    color: #000;
+    border-color: #000;
+}
+
+.btn-warning-outline:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000;
 }
