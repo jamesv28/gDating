@@ -54,7 +54,7 @@ strong {
     width: 100%;
 }
 
-#memberLeft {
+.memberLeft {
     background: #ffffff;
     opacity: .85;
     overflow-y: scroll;
@@ -630,10 +630,12 @@ strong {
 /******** Search Background Image ************/
 #searchPage {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://eskipaper.com/images/awesome-textured-background-1.jpg');
-    -webkit-background-size: cover ;
+    -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: top left;
+    background-attachment: fixed;
+    width: 100%;
     }
 
 /***** Search Page *********/

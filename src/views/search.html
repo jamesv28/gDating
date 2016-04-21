@@ -1,19 +1,19 @@
+<div class="row loadingBlock" ng-show="loading">
+    <div class="container spinner">
+        <img ng-src="../img/loading2.gif" >
+    </div>
+</div> <!-- end of loading -->
+
 <div class="row" id="searchPage">
     <div class="container-fluid" ng-controller="searchCtrl">
-        <div class="col-md-4" id="memberLeft" >
-            <p>
-                <!-- TODO include pagination here along with filters -->
-            </p>
-            <DIV class="indMember col-md-12" > <!--   ng-repeat="member in members"   -->
-                <div class="col-md-4">
-                    <div class="col-md-4">
-                        <!--<img ng-src="{{member.avatar}}">-->
-                    </div>
-                    <div class="col-md-8">
+        <div class="col-md-4 memberLeft" >
+            <div class="indMember col-md-12 col-sm-12" ng-repeat="member in members.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage))">
 
-                    </div>
-                </div>
+                <members-info member="member">
+
+                </members-info>
             </div>
+            <uib-pagination template-url="views/pagination.html" max-size="5" total-items="totalItems" ng-model="currentPage" ng-change="pageChanged()"></uib-pagination>
         </div><!-- END OF LEFT -->
 
                     <!--<h6 >{{member.username}} </h6>-->
