@@ -15,5 +15,5 @@ app.controller('MainCtrl', ['$scope', function($scope) {
 
 /*
 username: Raquel.Hayes53_Kris57@hotmail.com
-password: JkVex3y5Gqc1WVKBVVYc
+password: password
  */

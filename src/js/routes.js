@@ -12,9 +12,17 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'views/login.html',
             controller: 'loginCtrl'
         })
+        .when('/profile', {
+            templateUrl: 'views/profile.html',
+            controller: 'profileCtrl'
+        })
         .when('/members', {
             templateUrl: 'views/members.html',
             controller: 'membersCtrl'
+        })
+        .when('/logout', {
+            templateUrl: 'views/logout.html',
+            controller: 'logoutCtrl'
         })
         .when('/userProfile', {
             templateUrl: 'views/userProfile.html',

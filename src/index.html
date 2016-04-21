@@ -14,7 +14,7 @@
     <a class="navbar-brand" href="#/">gDating</a>
 
     <ul class="nav navbar-nav pull-right">
-      <li class="nav-item">
+      <li class="nav-item" ng-hide="currentUser">
         <a class="nav-link" href="#/userProfile">Profile</a>
       </li>
       <li class="nav-item">
@@ -23,11 +23,15 @@
       <li class="nav-item">
         <a class="nav-link" href="#/members">Members</a>
       </li>
-      <li class="nav-item">
+
+      <li class="nav-item" ng-show="currentUser">
         <a class="nav-link" href="#/login">Login</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" ng-show="currentUser">
         <a class="nav-link" href="#/register">Register</a>
+      </li>
+      <li class="nav-item" ng-hide="currentUser">
+        <a class="nav-link" href="#/Profile">Profile</a>
       </li>
     </ul>
 
@@ -46,6 +50,7 @@
     <script type="text/javascript" src="js/controllers/membersCtrl.js"></script>
     <script type="text/javascript" src="js/controllers/searchCtrl.js"></script>
     <script type="text/javascript" src="js/controllers/loginCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/profileCtrl.js"></script>
 
     <!--  services -->
     <script src="js/services/membersSerivces.js"></script>
