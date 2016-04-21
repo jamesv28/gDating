@@ -8,7 +8,7 @@ angular.module('membersDirective',[])
             transclude: true,
             templateUrl: 'views/directives/indMember.html',
             controller: function($scope) {
-                console.log('controller',$scope.member);
+                //console.log('controller',$scope.member);
             }
         };
     });

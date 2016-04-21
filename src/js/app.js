@@ -2,7 +2,8 @@
 var app = angular.module('myApp',
     [
         'ngRoute',
-        'membersDirective'
+        'membersDirective',
+        'ui.bootstrap'
         //'ngAnimate'
     ]);
 
