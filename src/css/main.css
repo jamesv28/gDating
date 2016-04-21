@@ -683,4 +683,6 @@ footer {
     height: 60px;
     background-color: #000;
     color: #ffffff;
+    padding-right: 0;
+    margin-right: 0;
 }
