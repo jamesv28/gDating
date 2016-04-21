@@ -1,7 +1,6 @@
 <div class="row loadingBlock" ng-show="loading">
 <div class="container spinner">
-    <img ng-src="../img/loader.gif" >
-    <p class="text-md-center"><i>Loading..Sorry</i></p>
+    <img ng-src="../img/loading2.gif" >
 </div>
 </div>
 <div class="row"  id="memberBackground">
@@ -11,14 +10,11 @@
            <p>
                <!-- TODO include pagination here along with filters -->
            </p>
-            <div class="indMember col-md-12" ng-repeat="member in members">
-                <div class="col-md-4">
-                    <img ng-src="{{member.avatar}}">
-                </div>
-                <div class="col-md-8">
-                    <h6 >{{member.username}} </h6>
-                    <p>City:  {{member.address.city}}</p>
-                </div>
+            <div class="indMember col-md-12 col-sm-12" ng-repeat="member in members">
+
+                <members-info member="member">
+
+                </members-info>
             </div>
         </div>
 

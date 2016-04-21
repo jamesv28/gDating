@@ -1,7 +1,8 @@
 // sample angular code
 var app = angular.module('myApp',
     [
-        'ngRoute'
+        'ngRoute',
+        'membersDirective'
         //'ngAnimate'
     ]);
 
