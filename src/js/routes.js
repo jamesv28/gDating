@@ -26,7 +26,7 @@ app.config(function ($routeProvider, $locationProvider) {
         })
         .when('/userProfile', {
             templateUrl: 'views/userProfile.html',
-            controller: 'profileCtrl'
+            controller: 'userProfileCtrl'
         })
         .when('/search', {
             templateUrl: 'views/search.html',
