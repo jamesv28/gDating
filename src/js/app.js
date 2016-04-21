@@ -3,6 +3,7 @@ var app = angular.module('myApp',
     [
         'ngRoute',
         'membersDirective',
+        'footerDirective',
         'ui.bootstrap'
         //'ngAnimate'
     ]);
