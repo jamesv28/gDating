@@ -255,25 +255,7 @@ strong {
     text-shadow: 1px 1px #eee;
 }
 
-/* Button */
-#slider a.button {
-    display: inline-block;
-    height: 40px;
-    background: #ededed;
-    padding: 0 15px;
-    bottom: 0;
-    left: 0;
-    font: 13px/40px Arial, sans-serif;
 
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid #aaa;
-    color: #333;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 40px;
-}
 /*
 #slider:hover #slides_image,#slider:hover #slides_info,#slider:hover #slides_image .slide,#slider:hover #slides_info .slide_info {
     -webkit-animation-play-state: paused;
@@ -676,8 +658,8 @@ strong {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
@@ -694,4 +676,9 @@ footer {
 
 #logout {
     margin-top: 50px;
+}
+
+.slide.one   img{
+    width: 530px;
+    height: 380px;
 }
