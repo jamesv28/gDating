@@ -9,8 +9,8 @@
      **/
     angular.module('myApp')
         .service('authService', authService);
-    authService.$inject = ['$http', '$window'];
-    function authService($http, $window) {
+    authService.$inject = ['$http', '$window','$location'];
+    function authService($http, $window, $location) {
         var user = {};
         var config = {
             headers: {
@@ -25,6 +25,7 @@
             logout: function() {
                 console.log('yolo');
                 $window.localStorage.clear();
+                $location.path('/');
             },
             register: function(user) {
                 return $http.post('https://galvanize-student-apis.herokuapp.com/gdating/auth/register', user, config);

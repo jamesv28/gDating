@@ -17,4 +17,7 @@ app.controller('MainCtrl', ['$scope', function($scope) {
 /*
 username: Raquel.Hayes53_Kris57@hotmail.com
 password: password
+
+
+ http://galvanize-student-apis.herokuapp.com/gdating/api-docs/#!/Members/get_members_id
  */

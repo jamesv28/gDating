@@ -1,11 +1,11 @@
-<div class="row" id="logout">
+<div class="row" id="logout" style="margin-top: 100px;">
 
     <div class="container">
         <div class="col-md-6 col-md-offset-3">
             <h2 class="text-md-center">Are You Sure?</h2>
-            <form ng-submit="logout()">
+            <form >
                 <div class="form-group text-md-center">
-                    <button type="submit" class=" btn btn-info-outline ">Logout</button>
+                    <button ng-click="logout()" type="submit" class=" btn btn-info-outline ">Logout</button>
                     <a href="#/" class="btn btn-danger-outline">
                        Cancel
                     </a>

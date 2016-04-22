@@ -1,4 +1,6 @@
-app.controller('logoutCtrl',['$scope',
-    function($scope) {
+app.controller('logoutCtrl', ['$scope', '$rootScope', 'authService',
+    function($scope, $rootScope, authService) {
+
+        $scope.logout = authService.logout();
 
     }]);
