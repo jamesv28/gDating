@@ -2,7 +2,6 @@ app.controller('membersCtrl', ['$scope', 'getMembersService', 'manipulateMembers
     function($scope, getMembersService, manipulateMembersService) {
 
         // get a loading gif before resources are loaded
-        //var vm = this;
        $scope.loading = true;
 
         getMembersService.getallMembers()
@@ -18,7 +17,6 @@ app.controller('membersCtrl', ['$scope', 'getMembersService', 'manipulateMembers
                 $scope.loading= false;
             });
 
-        console.log($scope.totalItems);
 
 
         $scope.pageChanged = function() {

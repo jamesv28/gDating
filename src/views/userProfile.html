@@ -1,7 +1,18 @@
-<div class="row">
-    <div class="container" id="profile">
-        <users-info>
+<div class="row" id="profile">
+    <div class="container">
+        <div class="col-md-4">
+           <h2>Edit your profile:</h2>
+            <form>
+                <div class="form-group">
+                    <label class="form-control-label">Name</label>
+                    <input ng-model="user.names.firstName" class="form-control">
+                </div>
+            </form>
+        </div><!-- left -->
+        <div class="col-md-6 col-sm-6 col-sm-offset-1 col-md-offset-1">
+            <h2>Your profile</h2>
+            <h4>Name: {{user.names.firstName}} {{user.names.lastName}}</h4>
 
-        </users-info>
+        </div>
     </div>
 </div>
