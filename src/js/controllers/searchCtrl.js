@@ -11,14 +11,13 @@ app.controller('searchCtrl', ['$scope', 'getMembersService',
                 console.log('members length', $scope.members.length);
                 $scope.viewby = 6;
                 $scope.totalItems = $scope.members.length;
-                $scope.currentPage = 4;
+                $scope.currentPage = 1;
                 $scope.itemsPerPage = $scope.viewby;
                 $scope.maxSize = 5;
             }).finally(function() {
                 $scope.loading= false;
             });
 
-        console.log($scope.totalItems);
 
 
         $scope.pageChanged = function() {
