@@ -5,7 +5,7 @@ var app = angular.module('myApp',
         'membersDirective',
         'footerDirective',
         'ui.bootstrap',
-        'userProfileDirective'
+        //'userProfileDirective'
         //'ngAnimate'
     ]);
 

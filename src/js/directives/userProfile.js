@@ -1,11 +1,11 @@
-angular.module('userProfileDirective',[])
+angular.module('myApp',[])
     .directive('usersInfo',['$rootScope','authService', '$scope',
             function($rootScope, authService) {
         return {
             restrict: 'E',
-            scope: {
-                member: '='
-            },
+            //scope: {
+            //    member: '='
+            //},
             transclude: true,
             templateUrl: 'views/directives/userProfile.html',
             controller: function($scope) {

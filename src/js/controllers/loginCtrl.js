@@ -15,6 +15,7 @@
                     authService.setUserInfo(user);
                     $location.path('/');
                     $rootScope.currentUser = authService.getUserInfo();
+                    console.log('current user', $rootScope.currentUser);
                 })
                 .catch(function(err) {
                     // check status code, send appropriate message
